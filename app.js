@@ -4,7 +4,7 @@ var express = require("express"),
     app = express(),
     http = require('http').Server(app),
     io = require('socket.io')(http),
-    port = process.env.PORT || 9000,
+    // port = process.env.PORT || 9000,
     waiting_list=[],
     temp_partner,
     num_users=0;
@@ -181,8 +181,8 @@ io.on('connection', function(socket){
 
 });
 
-app.listen(port, function(){
-    console.log('listening on *:' + port);
-});
+// app.listen(port, function(){
+//     console.log('listening on *:' + port);
+// });
 
 
