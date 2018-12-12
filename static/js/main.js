@@ -156,7 +156,7 @@ function getAllData(){
 		},
 		success: function(data){
 			console.log("We have data");
-			// console.log(data);
+			console.log(data);
 			//Clean up the data on the client
 			//You could do this on the server
 			var theData = data.map(function(d){

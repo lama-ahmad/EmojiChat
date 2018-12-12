@@ -8,12 +8,12 @@
     "express": "^4.16.2",
     "faker": "^4.1.0",
     "html2canvas": "^1.0.0-alpha.12",
+    "lightgallery.js": "^1.1.2",
     "request": "^2.88.0",
     "socket.io": "^2.0.4",
-    "underscore": "^1.9.1",
-    "node": "^8.9.1"
+    "underscore": "^1.9.1"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node index.js"
   }
 }

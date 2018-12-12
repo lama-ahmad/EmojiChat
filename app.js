@@ -2,9 +2,9 @@
 var express = require("express"),
     faker = require("faker"),
     app = express(),
-    https = require('http').Server(app),
-    io = require('socket.io')(https),
-    port = process.env.PORT || 9000,
+    http = require('http').Server(app),
+    io = require('socket.io')(http),
+    port = process.env.PORT || 3003,
     waiting_list=[],
     temp_partner,
     num_users=0;
@@ -181,7 +181,7 @@ io.on('connection', function(socket){
 
 });
 
-app.listen(port, function(){
+http.listen(port, function(){
     console.log('listening on *:' + port);
 });
 
