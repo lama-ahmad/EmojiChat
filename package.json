@@ -1,0 +1,19 @@
+{
+  "name": "EmojiChat",
+  "version": "0.0.1",
+  "description": "EmojiChatApp",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.2",
+    "faker": "^4.1.0",
+    "html2canvas": "^1.0.0-alpha.12",
+    "request": "^2.88.0",
+    "socket.io": "^2.0.4",
+    "underscore": "^1.9.1",
+    "node": "^8.9.1"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
