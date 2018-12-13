@@ -14,15 +14,16 @@ function getCategory(term){
 			var theData = data.map(function(d){
 				return d.doc;
             });
-            
-            console.log('eeeeeeeeeee');
-            console.log(theData);
-            $('#img').attr('src', theData[0].image);
+			
+			$("#img").css("display", 'block');
+            $('#img').attr('src', theData[Math.floor(Math.random() * theData.length)].image);
 
 		}
 	});
 }
 
 $(document).ready(function() {  
-    getCategory('memory');
+	getCategory('memory');
+	
 });
+

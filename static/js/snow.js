@@ -65,7 +65,7 @@ function snow() {
 	imgDrops = new Image();   
         imgDrops.src = "/static/img/upsidedown_emoji.png";   
         ctx.beginPath();
-        ctx.drawImage(imgDrops,flake.x,flake.y,flake.size+10,flake.size+10);  //For valentines Day
+        ctx.drawImage(imgDrops,flake.x,flake.y,flake.size+10,flake.size+10); 
         // ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);   //For snow
         ctx.fill();
     }

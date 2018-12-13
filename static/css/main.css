@@ -216,10 +216,30 @@ form button:hover{
     visibility:hidden;
 }
 
-#btnSave {
+.button {
     float: right;
     margin-right: 5%;
-}
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: #FFEB3B;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+.button:hover {background-color: #FFEB3B;}
+  
+.button:active {
+    background-color: #FFEB3B;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+ }
 
 div.emojionearea{
     width: 92%; 
@@ -246,6 +266,13 @@ h2,h3 {
 #canvas {
     height: 100vh;
     width: 100vw;
+}
+
+#img {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 @media screen and (max-width: 500px) {
