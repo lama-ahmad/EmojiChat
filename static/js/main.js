@@ -102,8 +102,8 @@ socket.on('partner', function (partner_data) {
         $('form button').css("background",FORM_INPUT_SEND_COLOR);
         partner_id = partner_data.id;
         partner_username=partner_data.username;
-        $('#m').attr("placeholder","Type to send a message");
-        $('div.emojionearea-editor').attr("placeholder","Type to send a message");
+        $('#m').attr("placeholder","Only use Emoji's Please!");
+        $('div.emojionearea-editor').attr("placeholder","Only use Emoji's Please!");
         socket.emit('partner',{target:partner_id,
             data:{id:socket.id,
                 username:socket.username}});
