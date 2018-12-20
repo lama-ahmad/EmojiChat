@@ -26,16 +26,22 @@ app.use(bodyParser.json());
 /*---------------
 //DATABASE CONFIG
 ----------------*/
-var cloudant_USER = '58dd82d5-410d-43c5-beb9-7c572d238346-bluemix';
-var cloudant_DB = 'emoji_chat';
-var cloudant_KEY = 'ficandeactandsouldreengl';
-var cloudant_PASSWORD = 'c1a8dff8c55b0dbee74568eb660740d3fed93c68';
+var cloudant_USER = '#';
+var cloudant_DB = '#';
+var cloudant_KEY = '#';
+var cloudant_PASSWORD = '#';
 
 var cloudant_URL = "https://" + cloudant_USER + ".cloudant.com/" + cloudant_DB;
 
 /*---------------
 //ROUTES
 ----------------*/
+
+app.use(function(req, res, next) { 
+	res.header("Access-Control-Allow-Origin", "*"); 
+	res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"); 
+	next();
+  });
 
 app.get("/", function(req, res){
 	res.render('index');
